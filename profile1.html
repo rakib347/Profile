@@ -1,0 +1,270 @@
+<!DOCTYPE HTML>
+<html lang="bn">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="theme-color" content="pink"/>
+  <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+  <meta name="description" content="@Owner_bd_Ceo"/>
+
+  <!-- Typed.js -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.10/typed.min.js"></script>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet"/>
+
+  <!-- Font Awesome 6 (Latest) -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet"/>
+
+  <title>রাকিব হাসান - প্রোফাইল</title>
+
+  <style>
+    :root {
+      --back_color: #221F2E;
+      --front_color: #2E2B3F;
+      --purple: #FF0000;
+      --pink: #EB7AC8;
+      --blue: #2DB8E7;
+      --green: #4CAF50;
+      --yellow: #FFEB3B;
+      --red: #F44336;
+    }
+
+    * {
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background: var(--back_color);
+      width: 100vw;
+      height: 100vh;
+      overflow: hidden;
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      padding-top: 10px; /* আগে ছিল 40px, এখন কমিয়ে 10px করা হয়েছে */
+    }
+
+    .vcard {
+      width: 450px;
+      height: 580px;
+      background: var(--front_color);
+      border-radius: 8px;
+      box-shadow: 5px 0px 20px rgba(0,0,0,0.39);
+    }
+
+    .header {
+      height: 40%;
+      position: relative;
+    }
+
+    .wave_bg {
+      border-radius: 8px;
+      position: relative;
+      height: 100%;
+      overflow: hidden;
+    }
+
+    .wave-01, .wave-02, .wave-03 {
+      position: absolute;
+      width: 300%;
+      height: 300%;
+      background: linear-gradient(to top right, var(--purple), var(--pink));
+      top: -200%;
+      left: -20%;
+      border-radius: 50%;
+      animation: rotate 10s linear infinite;
+    }
+
+    .wave-02 {
+      top: -205%;
+      left: -22%;
+      border-radius: 40%;
+      opacity: 0.5;
+      animation-duration: 15s;
+    }
+
+    .wave-03 {
+      top: -198%;
+      left: -18%;
+      border-radius: 45%;
+      opacity: 0.2;
+      animation-duration: 15s;
+    }
+
+    @keyframes rotate {
+      100% {
+        transform: rotate(360deg);
+      }
+    }
+
+    .profile_pic_content {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      position: absolute;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      top: 80%;
+      text-align: center;
+    }
+
+    .profile_pic_content::after {
+      content: '';
+      border-radius: 50%;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(to right, var(--purple), var(--pink));
+      position: absolute;
+      top: 1px;
+      left: 2px;
+      z-index: -1;
+      opacity: 0;
+      transition: all .7s;
+    }
+
+    .profile_pic_content:hover::after {
+      opacity: 0.2;
+    }
+
+    .profile_pic {
+      max-width: 100%;
+      max-height: 100%;
+      border-radius: 100%;
+    }
+
+    .card_content {
+      position: relative;
+      top: 7%;
+      text-align: center;
+    }
+
+    .satan {
+      color: var(--pink);
+      font-weight: 700;
+      font-size: 1.4em;
+    }
+
+    .snuff {
+      margin-top: 5px;
+      color: pink;
+      padding: 0px 10px;
+    }
+
+    .typed_text {
+      text-align: center;
+    }
+
+    .social {
+      color: pink;
+      padding: 5px;
+      margin-top: 65px;
+    }
+
+    .social a {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-decoration: none;
+      font-weight: bold;
+      margin: 5px 0; /* প্যাডিং এবং মার্জিন কমানো হয়েছে */
+      transition: 0.3s;
+      font-size: 14px; /* ফন্ট সাইজ কমানো হয়েছে */
+      padding: 4px 12px; /* প্যাডিং কমানো হয়েছে */
+      border-radius: 15px;
+    }
+
+    .social a i {
+      margin-right: 8px;
+      font-size: 16px;
+    }
+
+    .social a:nth-child(1) { background-color: var(--green); color: white; }
+    .social a:nth-child(2) { background-color: var(--blue); color: white; }
+    .social a:nth-child(3) { background-color: var(--yellow); color: black; }
+    .social a:nth-child(4) { background-color: var(--red); color: white; }
+    .social a:nth-child(5) { background-color: var(--pink); color: white; }
+
+    .social a:hover {
+      color: white;
+      box-shadow: 0px 8px 20px rgba(0,0,0,0.39);
+    }
+
+    .satanic {
+      cursor: pointer;
+      display: block;
+      text-decoration: none;
+      width: 50%;
+      margin-top: 10px;
+      margin-left: 25%;
+      background: linear-gradient(to top right, var(--pink), var(--purple));
+      padding: 8px 15px; /* প্যাডিং কমানো হয়েছে */
+      border-radius: 15px;
+      color: white;
+      font-weight: bolder;
+      transition: all .7s;
+    }
+
+    .satanic:hover {
+      box-shadow: 0px 8px 20px rgba(0,0,0,0.39);
+    }
+  </style>
+</head>
+<body>
+  <div class="vcard">
+    <div class="header">
+      <div class="wave_bg">
+        <div class="wave-01"></div>
+        <div class="wave-02"></div>
+        <div class="wave-03"></div>
+      </div>
+      <div class="profile_pic_content">
+        <img class="profile_pic" src="https://iili.io/3alIylV.md.jpg"/>
+      </div>
+    </div>
+    <div class="card_content">
+      <div class="satan">
+        <h4> রাকিব হাসান - প্রোফাইল 🇧🇩</h4>
+      </div>
+      <div class="snuff">
+        <h5 class="typed_text"><i>হ্যালো ওয়ার্ল্ড</i></h5>
+      </div>
+      <div class="social">
+        <a href="https://github.com/rakib347">
+          <i class="fab fa-github"></i> গিটহাব
+        </a>
+        <a href="https://www.facebook.com/share/166CKai4D4/">
+          <i class="fab fa-facebook"></i> ফেসবুক
+        </a>
+        <a href="https://t.me/Owner_bd_Ceo">
+          <i class="fab fa-telegram"></i> ডেভেলপার
+        </a>
+        <a href="https://wa.me/+8801831894346">
+          <i class="fab fa-whatsapp"></i> WhatsApp
+        </a>
+        <a href="mailto:rakibhasan894346@gmail.com">
+          <i class="fas fa-envelope"></i> ইমেইল: rakibhasan894346@gmail.com
+        </a>
+      </div>
+      <a class="satanic" href="https://t.me/bdhackingchannel">
+        <i class="fab fa-telegram"></i> যোগাযোগ করুন
+      </a>
+    </div>
+  </div>
+
+  <script>
+    var options = {
+      strings: [
+        "<i>প্রথম</i> বাক্য।",
+        "আল্লাহকে বিশ্বাস করো, কিছুই অসম্ভব না!<br>টেলিগ্রাম : @bdhackingchannel<br>টেলিগ্ৰাম আইডি : @Owner_bd_Ceo"
+      ],
+      typeSpeed: 7,
+      html: true
+    };
+    var typed = new Typed(".typed_text", options);
+  </script>
+</body>
+</html>
